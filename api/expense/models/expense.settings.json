@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "expenses",
+  "info": {
+    "name": "expense"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "amount": {
+      "type": "integer"
+    },
+    "project": {
+      "via": "expenses",
+      "model": "project"
+    }
+  }
+}

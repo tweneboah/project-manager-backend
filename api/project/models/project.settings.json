@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "projects",
+  "info": {
+    "name": "project"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "education",
+        "estate",
+        "business",
+        "other"
+      ]
+    },
+    "expenses": {
+      "collection": "expense",
+      "via": "project"
+    },
+    "incomes": {
+      "collection": "income",
+      "via": "project"
+    }
+  }
+}
