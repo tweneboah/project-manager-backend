@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "project_todos",
+  "info": {
+    "name": "projectTodo"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "content": {
+      "type": "string"
+    },
+    "project": {
+      "model": "project",
+      "via": "project_todos"
+    }
+  }
+}

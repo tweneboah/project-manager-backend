@@ -563,6 +563,18 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "image": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "project_todos": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               }
             }
           }

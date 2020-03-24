@@ -34,6 +34,16 @@
     "incomes": {
       "collection": "income",
       "via": "project"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "project_todos": {
+      "via": "project",
+      "collection": "project-todo"
     }
   }
 }
