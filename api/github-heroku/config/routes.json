@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/github-herokus",
+      "handler": "github-heroku.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/github-herokus/count",
+      "handler": "github-heroku.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/github-herokus/:id",
+      "handler": "github-heroku.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/github-herokus",
+      "handler": "github-heroku.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/github-herokus/:id",
+      "handler": "github-heroku.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/github-herokus/:id",
+      "handler": "github-heroku.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
